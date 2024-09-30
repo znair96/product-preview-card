@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.product-card {
+  margin: 16px;
+  border-radius: 12px;
+}
+.product-image-container {
+  background-image: url("./images/image-product-mobile.jpg");
+  background-size: cover;
+  height: 300px;
+  border-radius: 12px 12px 0px 0px;
+}
+.product-details {
+  padding: 18px;
+  background-color: white;
+  border-radius: 0 0 12px 12px;
+}
+.product-details h1 {
+  font-family: Fraunces;
+  font-size: 28px;
+  color: #1e2128;
+}
+.product-details .product-description {
+  font-size: 14px;
+  font-family: Montserrat;
+  color: #92929a;
+  font-weight: 500;
+  line-height: 1.55;
+  padding: 16px 0;
+}
+.product-details h3 {
+  color: #b5b6bc;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: Montserrat;
+  letter-spacing: 5px;
+  margin-bottom: 12px;
+}
+.pricing {
+  font-family: Fraunces;
+  display: flex;
+  gap: 14px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #4d7165;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+.pricing .original-price {
+  text-decoration: line-through;
+  font-size: 14px;
+  font-weight: 500;
+  color: #8c8d96;
+  position: relative;
+  top: 4px;
+}
+.add-to-cart-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 0;
+  background-color: #3d8168;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+@media only screen and (min-width: 1200px) {
+  .product-card {
+    display: flex;
+    /* border-radius: 0; */
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+  }
+  .product-image-container {
+    width: 18%;
+    background-image: url("./images/image-product-desktop.jpg");
+    border-radius: 10px 0 0 10px;
+    height: auto;
+  }
+  .product-details {
+    width: 18%;
+    border-radius: 0 10px 10px 0;
+  }
+  .product-details h1 {
+    font-size: 36px;
+  }
+  .product-details h3 {
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+  .pricing {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .pricing .original-price {
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 500;
+    color: #8c8d96;
+    position: relative;
+    top: 8px;
+  }
+  .add-to-cart-btn:hover {
+    background-color: #1b4031;
+    cursor: pointer;
+  }
+}
