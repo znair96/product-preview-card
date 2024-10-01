@@ -102,12 +102,12 @@ body {
     font-size: 36px;
   }
   .product-details h3 {
-    margin-top: 14px;
+    margin-top: 2px;
     margin-bottom: 16px;
   }
   .pricing {
     font-size: 32px;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
   }
   .pricing .original-price {
     text-decoration: line-through;
